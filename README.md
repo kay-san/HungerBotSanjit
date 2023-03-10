@@ -8,10 +8,6 @@ Simple chatbot implementation with PyTorch.
 
 The approach is inspired by this article and ported to PyTorch: [https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077](https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077).
 
-## Watch the Tutorial
-
-[![Alt text](https://img.youtube.com/vi/RpWeNzfSUHw/hqdefault.jpg)](https://www.youtube.com/watch?v=RpWeNzfSUHw&list=PLqnslRFeH2UrFW4AUgn-eY37qOAWQpJyg)
-
 ## Installation
 
 ### Create an environment
@@ -45,7 +41,7 @@ For Installation of PyTorch see [official website](https://pytorch.org/).
 You also need `nltk`:
 
 ```console
-pip install nltk
+
 ```
 
 If you get an error during the first run, you also need to install `nltk.tokenize.punkt`:
