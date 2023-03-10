@@ -1,23 +1,33 @@
 {
   "intents": [
     {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day",
-        "Whats up",
-        "how are ya",
-        "heyy",
-        "whatsup"
-      ],
-      "responses": [
-        "Hello!",
-        "Good to see you again!",
-        "Hi there, how can I help?"
-      ],
+      "tag": "greeting1",
+      "patterns": ["Hi", "Hey", "Hello"],
+      "responses": ["Hello!"],
+      "context_set": ""
+    },
+    {
+      "tag": "greeting2",
+      "patterns": ["How are you?"],
+      "responses": ["I am good. Thanks for asking!"],
+      "context_set": ""
+    },
+    {
+      "tag": "greeting3",
+      "patterns": ["Is anyone there?"],
+      "responses": ["Hi there, how can I help?"],
+      "context_set": ""
+    },
+    {
+      "tag": "greeting4",
+      "patterns": ["Have a nice day", "Have a Good day"],
+      "responses": ["Thanks, Hope to see you again soon!"],
+      "context_set": ""
+    },
+    {
+      "tag": "greeting5",
+      "patterns": ["Oh great", "great", "wow", "nice"],
+      "responses": ["Thanks, hope you liked it! "],
       "context_set": ""
     },
     {
@@ -30,18 +40,12 @@
         "Goodbye",
         "I am Leaving",
         "Bye",
-        "Have a Good day",
         "talk to you later",
         "tyyl",
         "i got to go",
         "gtg"
       ],
-      "responses": [
-        "Sad to see you go :(",
-        "Talk to you later",
-        "Goodbye!",
-        "Come back soon"
-      ],
+      "responses": ["Sad to see you go :(", "Goodbye!", "Come back soon"],
       "context_set": ""
     },
     {
@@ -95,31 +99,185 @@
       "context_set": ""
     },
     {
+      "tag": "random",
+      "patterns": ["I love you", "Will you marry me", "Do you love me"],
+      "responses": [
+        "I am not programmed for this please ask appropriate query"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "swear",
+      "patterns": [
+        "fuck",
+        "bitch",
+        "shut up",
+        "hell",
+        "stupid",
+        "idiot",
+        "dumb ass",
+        "asshole",
+        "fucker"
+      ],
+      "responses": [
+        "please use appropriate language",
+        "Maintaining decency would be appreciated"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "salutaion1",
+      "patterns": [
+        "okk",
+        "okie",
+        "nice work",
+        "well done",
+        "good job",
+        "thanks for the help",
+        "Thank You",
+        "its ok",
+        "Thanks",
+        "k",
+        "ok",
+        "okay",
+        "Thankyou",
+        "Thanku",
+        ""
+      ],
+      "responses": [
+        "I am glad that I helped you",
+        "Welcome, anything else I can assist you with?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "salutaion2",
+      "patterns": ["ohh sorry", "sorry", "my bad"],
+      "responses": [
+        "It's ok! I'm here to help you.",
+        "Don't worry, I'm here to help you."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "task",
+      "patterns": [
+        "what can you do",
+        "what are the thing you can do",
+        "things you can do",
+        "what can u do for me",
+        "how u can help me",
+        "why i should use you"
+      ],
+      "responses": [
+        "I can answer what dishes can be made based on the ingredients available in the kitchen and also What are the ingredients required to prepare a dish."
+      ],
+      "context_set": ""
+    },
+    {
       "tag": "chai",
       "patterns": [
-        "milk tea",
-        "water tea",
-        "milk sugar tea",
-        "water sugar tea",
-        "milk ginger tea",
-        "water ginger tea",
-        "water ginger tea sugar",
-        "milk ginger tea sugar"
+        "milk tea leaf",
+        "water tea leaf",
+        "milk sugar tea leaf",
+        "water sugar tea leaf",
+        "milk ginger tea leaf",
+        "water ginger tea leaf",
+        "water ginger tea leaf sugar",
+        "milk ginger tea leaf sugar"
       ],
       "responses": ["You can make Tea.."]
     },
     {
-      "tag": "Dish 2",
+      "tag": "chai-need ingredients",
       "patterns": [
-        "Bhetki fish, yoghurt, chopped onion, green chillies, ginger garlic paste, turmeric powder",
-        "cumin powder, coriander powder, red chilli powder, garam masala, black pepper, bay leaf, cardamom, salt, cloves, mustard oil",
-        "Bhetki fish, yoghurt, chopped onion, green chillies, ginger garlic paste, turmeric powder, cumin powder, coriander powder, red chilli powder, garam masala, black pepper, bay leaf, cardamom, salt, cloves, mustard oil"
+        "milk ",
+        "water ",
+        "milk sugar ",
+        "water sugar ",
+        "milk ginger ",
+        "water ginger ",
+        "water ginger  sugar",
+        "milk ginger  sugar"
       ],
-      "responses": ["you can make doi bhetki"]
+      "responses": ["You can make Tea by adding Tea Leaf to it"]
     },
     {
-      "tag": "Dish-2",
-      "patterns": ["Doi bhetki"],
+      "tag": "chai-reverse",
+      "patterns": [
+        "I want to make Tea",
+        "I want to prepare Tea",
+        "I want to make Chai",
+        "I want to prepare Chai",
+        "I want to make Chay",
+        "I want to prepare Chay",
+        "I want to make Chaye",
+        "I want to prepare Chaye",
+        "I want to make Cha",
+        "I want to prepare Cha",
+        "I wanna make Tea",
+        "I wanna prepare Tea",
+        "I wanna make Chai",
+        "I wanna prepare Chai",
+        "I wanna make Chay",
+        "I wanna prepare Chay",
+        "I wanna make Chaye",
+        "I wanna prepare Chaye",
+        "I wanna make Cha",
+        "I wanna prepare Cha",
+        "wanna make Tea",
+        "wanna prepare Tea",
+        "wanna make Chai",
+        "wanna prepare Chai",
+        "wanna make Chay",
+        "wanna prepare Chay",
+        "wanna make Chaye",
+        "wanna prepare Chaye",
+        "wanna make Cha",
+        "wanna prepare Cha",
+        "make Tea",
+        "prepare Tea",
+        "make Chai",
+        "prepare Chai",
+        "make Chay",
+        "prepare Chay",
+        "make Chaye",
+        "prepare Chaye",
+        "make Cha",
+        "prepare Cha",
+        "Tea",
+        "Chai",
+        "Chaye",
+        "Chay",
+        "Cha"
+      ],
+      "responses": [
+        "Oh great....! That's my favourite. You need Tea Leaf, Water, Milk, Sugar, Cardamom, Ginger to prepare Tea"
+      ]
+    },
+
+    {
+      "tag": "Dish 2",
+      "patterns": [
+        "Bhetki fish, yoghurt, chopped onion, green chillies, ginger garlic paste, turmeric powder, cumin powder, coriander powder, red chilli powder, garam masala, black pepper, bay leaf, cardamom, salt, cloves, mustard oil"
+      ],
+      "responses": ["you can make Doi Bhetki"]
+    },
+    {
+      "tag": "Dish-2 need ingredients",
+      "patterns": [
+        "yoghurt, chopped onion, green chillies, ginger garlic paste, turmeric powder, cumin powder, coriander powder, red chilli powder, garam masala, black pepper, bay leaf, cardamom, salt, cloves, mustard oil"
+      ],
+      "responses": ["you can make Doi Bhetki by adding Bhetki fish into it"]
+    },
+    {
+      "tag": "Dish-2 reverse",
+      "patterns": [
+        "I want to make Doi Bhetki",
+        "What are the ingredients needed to make Doi Bhetki?",
+        "What are the ingredients needed to prepare Doi Bhetki?",
+        "I want to prepare Doi Bhetki"
+      ],
       "responses": [
         "Great choice. For this you'll require Bhetki fish, yoghurt, chopped onion, green chillies, ginger garlic paste, turmeric powder, cumin powder, coriander powder, red chilli powder, garam masala, black pepper, bay leaf, cardamom, salt, cloves, mustard oil"
       ]
@@ -127,15 +285,25 @@
     {
       "tag": "Dish 3",
       "patterns": [
-        "Hilsa fish, mustard seeds, green chillies, coconut",
-        "yoghurt, salt, sugar, turmeric powder, mustard oil",
         "Hilsa fish, mustard seeds, green chillies, coconut, yoghurt, salt, sugar, turmeric powder, mustard oil"
       ],
       "responses": ["you can make Ilish bhapa"]
     },
     {
-      "tag": "Dish-3",
-      "patterns": ["Ilish bhapa"],
+      "tag": "Dish-3 need ingredients",
+      "patterns": [
+        "mustard seeds, green chillies, coconut, yoghurt, salt, sugar, turmeric powder, mustard oil"
+      ],
+      "responses": ["you can make Ilish Bhapa by adding Hilsh Fish into it"]
+    },
+    {
+      "tag": "Dish-3 reverse",
+      "patterns": [
+        "I want to make Ilish Bhapa",
+        "What are the ingredients needed to make Ilish Bhapa?",
+        "What are the ingredients needed to prepare Ilish Bhapa?",
+        "I want to prepare Ilish Bhapa"
+      ],
       "responses": [
         "That's one of my favourite. To make this you must have Hilsa fish, mustard seeds, green chillies, coconut, yoghurt, salt, sugar, turmeric powder, mustard oil"
       ]
@@ -145,11 +313,23 @@
       "patterns": [
         "Bhetki fish, lemon juice, coconut, yellow mustard, black mustard, green chillies, salt, banana leaves, mustard oil"
       ],
-      "responses": ["you can make Bhetki paturi"]
+      "responses": ["you can make Bhetki Paturi"]
     },
     {
-      "tag": "Dish-4",
-      "patterns": ["Bhetki paturi"],
+      "tag": "Dish 4",
+      "patterns": [
+        "lemon juice, coconut, yellow mustard, black mustard, green chillies, salt, banana leaves, mustard oil"
+      ],
+      "responses": ["you can make Bhetki paturi by adding Bhetki Fish into it"]
+    },
+    {
+      "tag": "Dish-4 reverse",
+      "patterns": [
+        "I want to make Bhetki Paturi",
+        "What are the ingredients needed to make Bhetki Paturi?",
+        "What are the ingredients needed to prepare Bhetki Paturi?",
+        "I want to prepare Bhetki Paturi"
+      ],
       "responses": [
         "Great choice. The ingredients that you'll require are Bhetki fish, lemon juice, coconut, yellow mustard, black mustard, green chillies, salt, banana leaves, mustard oil"
       ]
@@ -162,35 +342,417 @@
       "responses": ["you can make Doi Katla"]
     },
     {
-      "tag": "Dish-5",
-      "patterns": ["Doi Katla"],
+      "tag": "Dish 5",
+      "patterns": [
+        "mustard oil, salt, turmeric and chilli powder, sugar, curd, cumin seeds, cloves, cardamoms, cinnamon, green chilli paste, ginger paste, cashews"
+      ],
+      "responses": ["you can make Doi Katla by adding Katla Fish into it"]
+    },
+    {
+      "tag": "Dish-5 reverse",
+      "patterns": [
+        "I want to make Doi Katla",
+        "What are the ingredients needed to make Doi Katla?",
+        "What are the ingredients needed to prepare Doi Katla?",
+        "I want to prepare Doi Katla"
+      ],
       "responses": [
         "Great choice. For this you must require Katla fish, mustard oil, salt, turmeric and chilli powder, sugar, curd, cumin seeds, cloves, cardamoms, cinnamon, green chilli paste, ginger paste, cashews"
       ]
     },
     {
-      "tag": "need more ingredients",
+      "tag": "recipe 1",
       "patterns": [
-        "Bhetki fish, yoghurt, chopped onion",
-        "salt, turmeric and chilli powder, sugar",
-        "sugar, curd, cumin seeds",
-        "cumin seeds, cloves, cardamoms",
-        "cardamoms, cinnamon, green chilli paste",
-        "green chilli paste, ginger paste, cashews",
-        "Bhetki fish, lemon juice, coconut",
-        "coconut, yellow mustard, black mustard",
-        "black mustard, green chillies, salt, banana leaves",
-        "salt, banana leaves, mustard oil",
-        "Hilsa fish, mustard seeds, green chillies",
-        "green chillies, coconut, yoghurt",
-        "sugar, turmeric powder, mustard oil",
-        "Bhetki fish, yoghurt, chopped onion, green chillies",
-        "green chillies, ginger garlic paste",
-        "turmeric powder, cumin powder, coriander powder",
-        "coriander powder, red chilli powder, garam masala",
-        "black pepper, bay leaf, cardamom, salt, cloves, mustard oil"
+        "mustard oil, nigella seeds, dried red chillies, onions, potatoes, poppy seeds, green chillies,salt, sugar "
       ],
-      "responses": ["Please give some more ingredients!"]
+      "responses": ["You can make aloo posto by using these ingredients"]
+    },
+    {
+      "tag": "recipe-1 need ingredients",
+      "patterns": [
+        "mustard oil, dried red chillies, onions, poppy seeds, green chillies,salt, sugar "
+      ],
+      "responses": ["You can make aloo posto by adding Aloo and Posto into it"]
+    },
+    {
+      "tag": "recipe-1 reverse",
+      "patterns": [
+        "I want to make Aloo Posto",
+        "What are the ingredients needed to make Aloo Posto?",
+        "What are the ingredients needed to prepare Aloo Posto?",
+        "I want to prepare Aloo Posto"
+      ],
+      "responses": [
+        "Great choice. For this you must require mustard oil, dried red chillies, onions, poppy seeds, green chillies,salt, sugar"
+      ]
+    },
+    {
+      "tag": "recipe 2",
+      "patterns": [
+        "gram flour, rice flour, salt, kashmiri red chilli powder, water, brinjal , salt , sugar , mustard oil"
+      ],
+      "responses": ["You can make Beguni by using these ingredients"]
+    },
+    {
+      "tag": "recipe-2 need ingredients",
+      "patterns": [
+        "gram flour, rice flour, salt, kashmiri red chilli powder, water, salt , sugar , mustard oil"
+      ],
+      "responses": ["You can make Beguni by adding Brinjal into it"]
+    },
+    {
+      "tag": "recipe-2 reverse",
+      "patterns": [
+        "I want to make Beguni",
+        "What are the ingredients needed to make Beguni?",
+        "What are the ingredients needed to prepare Beguni?",
+        "I want to prepare Beguni"
+      ],
+      "responses": [
+        "Great choice. For this you must require gram flour, rice flour, salt, kashmiri red chilli powder, water, brinjal , salt , sugar , mustard oil"
+      ]
+    },
+    {
+      "tag": "recipe 3",
+      "patterns": [
+        "all-purpose flour, salt, sugar, vegetable oil, hot water, vegetable oil for deep-frying"
+      ],
+      "responses": ["You can make luchi by using these ingredients"]
+    },
+    {
+      "tag": "recipe-3 need ingredients",
+      "patterns": [
+        "salt, sugar, vegetable oil, hot water, vegetable oil for deep-frying"
+      ],
+      "responses": ["You can make luchi by adding all purpose flour into it"]
+    },
+    {
+      "tag": "recipe-3 reverse",
+      "patterns": [
+        "I want to make Luchi",
+        "What are the ingredients needed to make Luchi?",
+        "What are the ingredients needed to prepare Luchi?",
+        "I want to prepare Luchi"
+      ],
+      "responses": [
+        "Great choice. For this you must require all-purpose flour, salt, sugar, vegetable oil, hot water, vegetable oil for deep-frying"
+      ]
+    },
+    {
+      "tag": "recipe 4",
+      "patterns": [
+        "sugar, white vinegar, ripe mangoes , onion, golden raisins , ginger , mustard seeds, red pepper flakes"
+      ],
+      "responses": ["You can make mango chutney by using these ingredients"]
+    },
+    {
+      "tag": "recipe-4 need ingredients",
+      "patterns": [
+        "sugar, white vinegar, onion, golden raisins , ginger , mustard seeds, red pepper flakes"
+      ],
+      "responses": ["You can make mango chutney by adding Ripe Mango into it"]
+    },
+    {
+      "tag": "recipe-4 reverse",
+      "patterns": [
+        "I want to make Mango Chutney",
+        "What are the ingredients needed to make Mango Chutney?",
+        "What are the ingredients needed to prepare Mango Chutney?",
+        "I want to prepare Mango Chutney"
+      ],
+      "responses": [
+        "Great choice. For this you must require sugar, white vinegar, ripe mangoes , onion, golden raisins , ginger , mustard seeds, red pepper flakes"
+      ]
+    },
+
+    {
+      "tag": "dish",
+      "patterns": [
+        "I want to make a bengali dish",
+        "I want to make a dish",
+        "I wanna make a bengali dish",
+        "I want to prepare a bengali dish",
+        "I wanna prepare a bengali dish",
+        "I want to make something",
+        "I want to prepare something",
+        "I want to prepare"
+      ],
+      "responses": [
+        "Ohh that's great! What are the ingredients available to you?"
+      ]
+    },
+    {
+      "tag": "dish 1",
+      "patterns": [
+        "rice, daal, mustard powder, water, chilli, vegetables, salt, sugar"
+      ],
+      "responses": ["You can make Khichdi by using that ingredients."]
+    },
+    {
+      "tag": "dish-1 need ingredients",
+      "patterns": ["mustard powder, water, chilli, vegetables, salt, sugar"],
+      "responses": ["You can make Khichdi by adding Rice and Daal into it"]
+    },
+    {
+      "tag": "dish-1 reverse",
+      "patterns": [
+        "What are the ingredients needed to make khichdi?",
+        "I want to make Khichdi",
+        "What are the ingredients needed to prepare khichdi?",
+        "I want to prepare Khichdi"
+      ],
+      "responses": [
+        "Great choice. For this you must require rice, daal, mustard powder, water, chilli, vegetables, salt, sugar"
+      ]
+    },
+    {
+      "tag": "dish 2",
+      "patterns": ["rice, milk, salt, elaichi, cashew, raisin, sugar"],
+      "responses": ["You can make Payesh easily"]
+    },
+    {
+      "tag": "dish-2 need ingredients",
+      "patterns": ["milk, salt, elaichi, cashew, raisin, sugar"],
+      "responses": ["You can make Payesh by adding Rice into it"]
+    },
+    {
+      "tag": "dish-2 reverse",
+      "patterns": [
+        "What are the ingredients needed to prepare payesh?",
+        "I want to prepare payesh",
+        "What are the ingredients needed to make payesh?",
+        "I want to make payesh"
+      ],
+      "responses": [
+        "Great choice. For this you must require rice, milk, salt, elaichi, cashew, raisin, sugar"
+      ]
+    },
+    {
+      "tag": "dish 3",
+      "patterns": [
+        "prawn, salt, mustuard powder, chilli, cashew, raisin, sugar, coconut powder"
+      ],
+      "responses": ["You can make Chingri(Prawn) Malaikari"]
+    },
+    {
+      "tag": "dish-3 need ingredients",
+      "patterns": [
+        "salt, mustuard powder, chilli, cashew, raisin, sugar, coconut powder"
+      ],
+      "responses": [
+        "You can make Chingri(Prawn) Malaikari by adding Prawn into it"
+      ]
+    },
+    {
+      "tag": "dish-3 reverse",
+      "patterns": [
+        "What are the ingredients needed to prepare chingri malaikari?",
+        "I want to make chingri malaikari",
+        "What are the ingredients needed to make chingri malaikari?",
+        "I want to prepare chingri malaikari"
+      ],
+      "responses": [
+        "Great choice. For this you must require prawn, salt, mustuard powder, chilli, cashew, raisin, sugar, coconut powder"
+      ]
+    },
+    {
+      "tag": "dish 4",
+      "patterns": [
+        "chicken, salt, mustuard powder, chilli powder, jeera powder, coriender powder, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ],
+      "responses": ["You can make Chicken Curry"]
+    },
+    {
+      "tag": "dish-4 need ingredients",
+      "patterns": [
+        "salt, mustuard powder, chilli powder, jeera powder, coriender powder, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ],
+      "responses": ["You can make Chicken Curry by adding Chicken into it"]
+    },
+    {
+      "tag": "dish-4 reverse",
+      "patterns": [
+        "What are the ingredients needed to prepare chicken curry?",
+        "I want to make chicken curry",
+        "What are the ingredients needed to make chicken Curry?",
+        "I want to prepare chicken curry",
+        "chicken curry"
+      ],
+      "responses": [
+        "You need these ingredients to prepare chicken curry. Chicken, salt, mustuard powder, chilli powder, jeera powder, coriender powder, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ]
+    },
+    {
+      "tag": "dish 5",
+      "patterns": [
+        "mutton, salt, mustuard powder, chilli powder, jeera powder, coriender powder, curd, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ],
+      "responses": ["You can make Mutton Curry"]
+    },
+    {
+      "tag": "dish-5 need ingredients",
+      "patterns": [
+        "salt, mustuard powder, chilli powder, jeera powder, coriender powder, curd, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ],
+      "responses": ["You can make Mutton Curry by adding Mutton into it"]
+    },
+    {
+      "tag": "dish-5 reverse",
+      "patterns": [
+        "What are the ingredients needed to prepare mutton curry?",
+        "I want to prepare mutton curry",
+        "What are the ingredients needed to make mutton curry?",
+        "I want to make mutton curry"
+      ],
+      "responses": [
+        "You need these ingredients to prepare mutton curry. Mutton, salt, mustuard powder, chilli powder, jeera powder, coriender powder, curd, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ]
+    },
+    {
+      "tag": "ingredients-6",
+      "patterns": ["rice, water"],
+      "responses": [
+        "You can make only Plain Rice. Do have any other ingredients?"
+      ]
+    },
+    {
+      "tag": "ingredients-7",
+      "patterns": [
+        "chicken",
+        "water",
+        "rice",
+        "prawn",
+        "potato",
+        "mutton",
+        "daal",
+        "vegitables",
+        "salt",
+        "sugar",
+        "spices",
+        "ginger",
+        "garlic",
+        "vegitable oil"
+      ],
+      "responses": [
+        "Sorry, you can't make any dish by only one ingredient. You need others ingredients also."
+      ]
+    },
+
+    {
+      "tag": "recipe with egg",
+      "patterns": [
+        "Quick bengali recipes with egg",
+        "quick bengali recipe",
+        "bengali recipes with egg",
+        "recipes with egg",
+        "something with egg",
+        "some recipes with egg",
+        "suggest some recipes with egg",
+        "suggest something with egg",
+        "suggest quick bengali recipe with egg",
+        "recommend some recipes with egg",
+        "recommend something with egg",
+        "recommend quick bengali recipe with egg"
+      ],
+      "responses": ["You can prepare Omlette, Egg Curry, Egg Poach"]
+    },
+    {
+      "tag": "main food of bengali",
+      "patterns": [
+        "what is the traditional food of bengali",
+        "what are the traditional food of bengali",
+        "food of bengali",
+        "course bengali menu",
+
+        "what is the traditional bengali foods",
+        "what are the traditional bengali foods",
+        "bengali foods",
+
+        "what is the traditional dishes of bengali",
+        "what are the traditional dishes of bengali",
+        "dishes of bengali",
+
+        "what is the traditional bengali dishes",
+        "what are the traditional bengali dishes",
+        "bengali dishes",
+
+        "what is the traditional cousines of bengali",
+        "what are the traditional cousines of bengali",
+        "cousines of bengali",
+
+        "what is the traditional bengali cousines",
+        "what are the traditional bengali cousines",
+        "bengali cousines",
+
+        "what is the main food of bengali",
+        "what are the main food of bengali",
+
+        "what is the main bengali foods",
+        "what are the main bengali foods",
+
+        "what is the main dishes of bengali",
+        "what are the main dishes of bengali",
+
+        "what is the main bengali dishes",
+        "what are the main bengali dishes",
+
+        "what is the main cousines of bengali",
+        "what are the main cousines of bengali",
+
+        "what is the main bengali cousines",
+        "what are the main bengali cousines",
+
+        "what is the authentic food of bengali",
+        "what are the authentic food of bengali",
+
+        "what is the authentic bengali foods",
+        "what are the authentic bengali foods",
+
+        "what is the authentic dishes of bengali",
+        "what are the authentic dishes of bengali",
+
+        "what is the authentic bengali dishes",
+        "what are the authentic bengali dishes",
+
+        "what is the authentic cousines of bengali",
+        "what are the authentic cousines of bengali",
+
+        "what is the authentic bengali cousines",
+        "what are the authentic bengali cousines"
+      ],
+      "responses": [
+        "A traditional Bengali Cousines, consisting of bhaat (rice), aloo bhaja (fried potato), begun bhaja (fried eggplant), dal (lentils), chingri machher malaikari (prawn in coconut gravy), mutton, chatni, papad, and mishti(sweets)."
+      ]
+    },
+    {
+      "tag": "daab chingri",
+      "patterns": [
+        "Shrimps , coconut , onion , garlic , green chilli , mustard , panch phoron , mustard oil , Salt , Turmeric powder"
+      ],
+      "responses": ["You can prepare Daab Chingri using these ingredients"]
+    },
+    {
+      "tag": "daab chingri - need ingredients",
+      "patterns": [
+        "onion , garlic , green chilli , mustard , panch phoron , mustard oil , Salt , Turmeric powder"
+      ],
+      "responses": [
+        "You can prepare Daab Chingri adding Shrimps and Coconut into it"
+      ]
+    },
+    {
+      "tag": "daab chingri- reverse",
+      "patterns": [
+        "What are the ingredients needed to prepare daab chingri?",
+        "ingredients needed to prepare daab chingri",
+        "I want to prepare daab chingri",
+        "What are the ingredients needed to make daab chingri?",
+        "ingredients needed to make daab chingri",
+        "I want to make daab chingri"
+      ],
+      "responses": [
+        "Ingredients of Daab Chingri: Shrimps, deshelled and deveined, 1 large daab (tender coconut), 1 small onion, 2 cloves of garlic, 1/2 tsp green chilli paste, 2 Tbsp mustard paste, 1/4 tsp panch phoron, 3 Tbsp mustard oil, Salt, Turmeric powder, Wheat dough/aluminium foil (to seal the coconut)"
+      ]
     }
   ]
 }
